@@ -156,6 +156,8 @@ To train the neural network (RNN), run the file `dlnd_face_generation.ipynb`.
 
 I trained for 100 Epochs
 
+![training loss](./assets/training_loss.png)
+
 ## Improvements
 
 The next steps will be:
