@@ -106,6 +106,8 @@ Remember that we want the discriminator to output 1 for real images and 0 for fa
 
 The generator loss will look similar only with flipped labels. The generator's goal is to get the discriminator to think its generated images are real.
 
+We used the BCEWithLogitsLoss (Binary Cross Entropy Loss) loss function
+
 ```python
 def real_loss(D_out):
     '''Calculates how close discriminator outputs are to being real.
@@ -133,6 +135,7 @@ def fake_loss(D_out):
 ```
 
 ### Optimizer
+For optimizers, I used a learning rate of 0.002 and the Adam optimizer
 
 ```Python
 lr = 0.002
@@ -142,6 +145,7 @@ beta2 = 0.99
 # Create optimizers for the discriminator D and generator G
 d_optimizer = optim.Adam(D.parameters(), lr, [beta1, beta2])
 g_optimizer = optim.Adam(G.parameters(), lr, [beta1, beta2])
+```
 
 ### Train the model
 
