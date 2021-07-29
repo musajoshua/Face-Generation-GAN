@@ -36,7 +36,7 @@ conda install -c pytorch pytorch
 ```
 
 ## Jupyter Notebook
-* `dlnd_tv_script_generation.ipynb`
+* `dlnd_face_generation.ipynb.ipynb`
 
 This jupyter notebook describe the whole project from udacity, from the beginning to the end.
 
