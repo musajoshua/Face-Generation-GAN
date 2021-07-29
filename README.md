@@ -149,7 +149,7 @@ g_optimizer = optim.Adam(G.parameters(), lr, [beta1, beta2])
 
 ### Train the model
 
-To train the neural network (RNN), run the file `dlnd_face_generation.ipynb`.
+To train the neural network (DCGAN), run the file `dlnd_face_generation.ipynb`.
 
 
 ### Output of training
